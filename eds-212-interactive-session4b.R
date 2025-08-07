@@ -21,5 +21,9 @@ head(penguins)
 #make a pair plot 
 GGally::ggpairs(penguins)
 
+#make a pairplot by species
+GGally::ggpairs(penguins, columns = 3:6, 
+                ggplot2::aes(col =species))
+
 
 
