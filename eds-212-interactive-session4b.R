@@ -18,3 +18,8 @@ summary(penguins)
 skimr::skim(penguins)
 head(penguins)
 
+#make a pair plot 
+GGally::ggpairs(penguins)
+
+
+
