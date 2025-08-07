@@ -26,4 +26,10 @@ GGally::ggpairs(penguins, columns = 3:6,
                 ggplot2::aes(col =species))
 
 
+##now let's do histograms
+penguins %>% ggplot(aes(x = flipper_length_mm, fill = factor(species))) + geom_histogram()
+
+
+
+
 
